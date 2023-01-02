@@ -33,13 +33,13 @@ int [,] ChageColumns(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            for (int k = 0; k < array.GetLength(1)-1; k++)
+            for (int z = 0; z < array.GetLength(1)-1; z++)
             {
-                if (array[i,k]<array[i,k+1])
+                if (array[i,z]<array[i,z+1])
                 {
-                    int temp = array[i,k+1];
-                    array[i,k+1] = array[i,k];
-                    array[i,k] = temp;
+                    int temp = array[i,z+1];
+                    array[i,z+1] = array[i,z];
+                    array[i,z] = temp;
                 }
             }
         }
